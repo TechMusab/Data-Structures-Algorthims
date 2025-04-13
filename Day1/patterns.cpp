@@ -62,19 +62,42 @@ cin>>n;
 //     i++;
 
 // }
-int i=1;
+// int i=1;
  
+// while (i<=n){
+//     int j=1;
+//     while(j<=i){
+//         cout << i+j-1 << " ";
+//         j++;
+//     }
+//     cout<<endl;
+//     i++;
+
+// }
+// int i=1;
+ 
+// while (i<=n){
+//     int j=1;
+//     while(j<=n){
+//         char ch = 'A' + j - 1;
+//         cout << ch << " ";
+//         j++;
+//     }
+//     cout<<endl;
+//     i++;
+
+// }
+int i=1 ;
 while (i<=n){
+
     int j=1;
-    int val=i;
-    while(j<=i){
-        cout << val << " ";
-        val++;
+    while (j<=n){
+        char ch = 'A' + i +j -2;
+        cout << ch << " ";
         j++;
     }
-    cout<<endl;
+    cout <<endl;
     i++;
-
 }
     return 0;
 }

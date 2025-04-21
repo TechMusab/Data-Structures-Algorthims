@@ -35,13 +35,19 @@ bool isPrime(int n)
     }
     return true;
 }
+// pass by value
+/*
+==> The value of the variable is passed to the function
+==> The value of the variable is copied to the function
+==> The original value of the variable is not changed
+*/
 int main()
 {
 
-    // int n, r;
-    // cout << "Enter n and r" << endl;
-    // cin >> n >> r;
-    // cout << "nCr is " << nCr(n, r) << endl;
+    int n, r;
+    cout << "Enter n and r" << endl;
+    cin >> n >> r;
+    cout << "nCr is " << nCr(n, r) << endl;
     int number;
     cout << "Enter the Number" << endl;
     cin >> number;

@@ -9,11 +9,12 @@ int reverseinteger(int i)
     {
         //normal case
         int digit = i % 10;
-        ans = (ans * 10) + digit;
+       
         //special case
         if(ans<INT_MIN/10 || ans>INT_MAX/10){
             return 0;
         }
+         ans = (ans * 10) + digit;
         i = i / 10;
     }
     return ans;
@@ -21,7 +22,7 @@ int reverseinteger(int i)
 int main()
 {
 
-    cout<<reverseinteger(123443);
+    cout<<reverseinteger(-2147483412);
 
     return 0;
 }

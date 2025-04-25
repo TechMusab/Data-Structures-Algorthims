@@ -1,0 +1,54 @@
+# C++ object files
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Static libraries
+*.a
+*.lib
+
+# Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Executable files (Windows, Linux, macOS)
+*.exe
+*.out
+*.app
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Build directories
+build/
+Build/
+bin/
+Debug/
+Release/
+dist/
+
+# Backup and swap files
+*~
+*.swp
+*.bak
+*.tmp
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

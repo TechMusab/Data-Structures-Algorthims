@@ -1,12 +1,11 @@
-#include <iostream>
-#include <vector>
-using namespace std;
 /*
-Problem
-Statement:
+Problem Statement:
 Given two arrays, find the intersection of the two arrays. The intersection is the set of elements that are common to both arrays.
 Arrays are sorted in non decreasing order
 */
+#include <iostream>
+#include <vector>
+using namespace std;
 vector<int> intersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
 {
     vector<int> ans;
@@ -30,7 +29,7 @@ vector<int> intersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
         }
     }*/
 
-    
+
     // Optimzed approach
     int i=0, j=0;
     while (i < n && j < m)

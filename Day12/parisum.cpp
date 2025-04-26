@@ -1,10 +1,11 @@
-#include <iostream>
-#include <vector>
-using namespace std;
 /*
 Problem Statement:
 Given an array of integers, find all pairs of elements that sum up to a given number n. The pairs should be returned in a 2D vector, where each pair is represented as a vector of two integers. The pairs should be sorted in ascending order based on the first element of the pair.
 */
+#include <iostream>
+#include <vector>
+using namespace std;
+
 vector<vector<int>> pairsum(vector<int> &arr, int n)
 {
     vector<vector<int>> ans;
@@ -31,7 +32,7 @@ int main()
     vector<vector<int>> ans = pairsum(arr, 5);
     for (int i = 0; i < ans.size(); i++)
     {
-        cout << ans[i][0] << " " << ans[i][1] << endl;
+        cout<<"Pair Sum:" << ans[i][0] << " " << ans[i][1] << endl;
     }
 
 

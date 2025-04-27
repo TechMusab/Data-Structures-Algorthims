@@ -2,36 +2,22 @@
 using namespace std;
 
 void sort012(int arr[],int size){
-    int i=0;
-    int j=size-1;
-    while(i<j){
-        if(arr[i]==0){
-            i++;
+    int low=0;
+    int mid=0;
+    int high=size-1;
+    while(mid<=high){
+        if(arr[mid]==0){
+            swap(arr[low],arr[mid]);
+            low++;
+            mid++;
         }
-        else if(arr[j]==2){
-            j--;
+        else if(arr[mid]==1){
+            mid++;
         }
-        else if(arr[i]==1 && arr[j]==0){
-            swap(arr[i],arr[j]);
-            i++;
+        else{
+            swap(arr[mid],arr[high]);
+            high--;
         }
-        else if(arr[i]==2 && arr[j]==1){
-            swap(arr[i],arr[j]);
-            i++;
-            j--;
-        }
-        else if(arr[i]==1 && arr[j]==2){
-            j--;
-        }
-        else if(arr[i]==2 && arr[j]==1){
-            i++;
-        }
-        else if(arr[i]==2 && arr[j]==0){
-            swap(arr[i],arr[j]);
-            i++;
-            j--;
-        }
-        
     }
 }
 

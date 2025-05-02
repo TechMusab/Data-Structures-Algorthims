@@ -29,7 +29,7 @@ int bookallocation(int arr[], int m, int size)
     int s = 0;
     int e = 0;
     int sum = 0;
-    int ans = 0;
+    int ans = -1;
     for (int i = 0; i < size; i++)
     {
         sum += arr[i];
@@ -39,6 +39,7 @@ int bookallocation(int arr[], int m, int size)
     int mid = s + (e - s) / 2;
     while (s <= e)
     {
+        mid = s + (e - s) / 2;
         if (isPossible(arr, m, size, mid))
         {
             ans = mid;
@@ -55,8 +56,8 @@ int bookallocation(int arr[], int m, int size)
 int main()
 {
     int arr[4] = {10, 20, 30, 40};
-    int ans = bookallocation(arr, 2, 4);
-    cout << ans;
+    int ans = bookallocation(arr, 3, 4);
+    cout << "The minimum number of pages is " << ans << endl;
 
     return 0;
 }

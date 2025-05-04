@@ -17,6 +17,7 @@ bool isPossible(int arr[], int n, int mid, int size)
             {
                 return false;
             }
+             sum = arr[i];
         }
     }
     return true;

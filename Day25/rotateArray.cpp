@@ -13,7 +13,15 @@ void rotate(vector<int> &nums, int k)
 
 int main()
 {
-    
+     vector<int> nums = {3,4,5,1,2};
+    int k = 1;
+    rotate(nums, k);
+    for (int i = 0; i < nums.size(); i++)
+    {
+        cout << nums[i] << " ";
+    }
+
+
 
 
 

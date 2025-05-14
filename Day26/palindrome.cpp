@@ -21,14 +21,12 @@ int main()
     char ch[10];
     cout << "Enter a string: ";
     cin >> ch;
-    int count = 0;
     int i = 0;
     while (ch[i] != '\0')
     {
-        count++;
         i++;
     }
-    if (isPalindrome(ch, count))
+    if (isPalindrome(ch, i))
     {
         cout << "The string is a palindrome." << endl;
     }

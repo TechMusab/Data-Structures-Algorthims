@@ -5,8 +5,13 @@ int main(){
 char ch[10];
 cout<<"Enter a string: ";
 cin>>ch;
-ch[3]='\0';
-cout<<ch;
+int count=0;
+int i=0;
+while(ch[i]!='\0'){
+    count++;
+    i++;
+}
+cout<<"Length of the string is: "<<count<<endl;
 
     return 0;
 }

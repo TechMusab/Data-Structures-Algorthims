@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 char getmaxoccurenceofcharcterinstring(string s){
     int ans[26]={0};
     for(int i=0;i<s.length();i++){

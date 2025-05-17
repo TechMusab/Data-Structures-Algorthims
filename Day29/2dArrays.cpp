@@ -1,6 +1,22 @@
 #include <iostream>
 using namespace std;
 
+
+bool isPresent(int arr[][4],int element,int row, int col)
+{
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            if (arr[i][j] == element)
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 int main()
 {
     int arr[3][4]={1,2,3,4,5,6,7,8,9,10,11,12};
@@ -19,7 +35,7 @@ int main()
     int search;
     cout << "Enter the element to search: ";
     cin >> search;
-    if(isPresent(arr, search))
+    if(isPresent(arr, search,3,4))
     {
         cout << "Element found" << endl;
     }

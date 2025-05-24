@@ -30,22 +30,20 @@ void segmentedSieve(int L, int R)
     int size = R - L + 1;
     vector<bool> vec(size, true);
     if (L == 1)
+    {
         vec[0] = false;
+    }
 
     for (int p : basePrimes)
     {
 
-        for (int i = L; i <= R; i++)
-        {
-            int start = max(p * p, ((L + p - 1) / p) * p);
+        int start = max(p * p, ((L + p - 1) / p) * p);
 
-            int j = start;
-            while (j <= R)
-            {
-                vec[j - L] = false;
-                j += p;
-            }
-            break;
+        int j = start;
+        while (j <= R)
+        {
+            vec[j - L] = false;
+            j += p;
         }
     }
     for (int i = 0; i < size; i++)
